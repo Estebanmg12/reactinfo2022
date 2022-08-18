@@ -18,7 +18,7 @@ const Noticias = ({search, not}) =>{
               <div className="flex justify-between mx-3 mt-auto text-sm font-light">
                 <p className="">Publicado el: {artist.publishedAt.slice(0, 10)}</p>
                 <p className="">{artist.source.name}</p>
-                <a href={artist.url}>Mas Información</a>
+                <a href={artist.url} target="_blank">Mas Información</a>
               </div>
             </div>
           </a>
