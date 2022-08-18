@@ -8,7 +8,7 @@ const Noticias = ({search, not}) =>{
           {not?.articles?.map((artist) => (
             <a>
             <hr/>
-            <img src={artist.urlToImage ? artist.urlToImage : "/images/default_image.png"} 
+            <img class="rounded float-end" src={artist.urlToImage ?  artist.urlToImage : "/images/default_image.png"} 
             width="200" height="200" >
             </img>
             <div className="flex flex-col p-2 lg:w-[380px] lg:h-[350px] 

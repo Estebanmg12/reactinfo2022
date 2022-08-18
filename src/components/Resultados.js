@@ -57,8 +57,10 @@ const Resultados = () =>{
             {loading && <Loader />}
             
             <Formulario handleSearch={handleSearch} />
-            <button className="page-link" onClick={handleAtras}>atras</button>
-            <button className="page-link" onClick={handleAdelante}>adelante</button>
+            <div className="container d-flex justify-content-between my-3">
+            <button type="button" class="btn btn-dark" onClick={handleAtras}>atras</button>
+            <button type="button" class="btn btn-dark" onClick={handleAdelante}>adelante</button>
+            </div>
             {search && !loading && (<Noticias search={search} not={not} />)}
             
         </div>
