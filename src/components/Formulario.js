@@ -17,7 +17,7 @@ const Formulario = ({handleSearch}) =>{
     const handleSubmit = e => {
         e.preventDefault();
 
-        if(!form.artist) {
+        if(form.artist.length < 3) {
             alert("Datos incompletos");
             return;
         }
